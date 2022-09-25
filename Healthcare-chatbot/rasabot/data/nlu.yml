@@ -1,0 +1,171 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - bye
+    - see you
+    - good night
+    - goodbye
+    - have a nice day
+    - exit
+
+- intent: confirm
+  examples: |
+    - Y
+    - y
+    - Yes
+    - yes
+    - YES
+
+- intent: deny
+  examples: |
+    - N
+    - n
+    - No
+    - no
+    - NO
+
+- intent: day
+  examples: |
+    - less than 24 hours
+    - more than 24 hours
+    - less
+    - more
+    - l
+    - m
+
+- intent: head_symptom
+  examples: |
+    - headache
+    - pain in head
+    - head ache
+    - head
+    - ha
+    - HA
+
+- intent: head_whole
+  examples: |
+    - whole
+    - w
+    - hole
+
+- intent: head_sides
+  examples: |
+    - sides
+    - side
+    - s
+
+- intent: head_crown
+  examples: |
+    - crown
+    - crowns
+    - cr
+
+- intent: head_eyes
+  examples: |
+    - eyes
+    - eye
+    - e
+
+- intent: flu_symptom
+  examples: |
+    - flu
+    - cough
+    - cold
+    - fever
+    - f
+    - runny rose
+    - vomitting
+    - body ache
+    - F
+
+- intent: vision_symptom
+  examples: |
+    - vision
+    - vs
+    - VS
+
+- intent: stomach_symptom
+  examples: |
+    - stomachache
+    - pain in stomach
+    - stomach ache
+    - stomach
+    - SA
+    - sa
+
+- intent: fracture_symptom
+  examples: |
+    - fracture
+    - hand pain
+    - leg pain
+    - FA
+    - fa
+
+- intent: fracture_details
+  examples: |
+    - it is a mild ache
+    - yes there is a swelling
+    - yes there is a physical deformity
+    - yes it is bleeding
+
+- intent: fracture_accepted
+  examples: |
+    - yes i think it is fracture
+    - yes it is hurting
+    - it is bleeding
+    - blood is coming out
+
+- intent: cold_confirm
+  examples: |
+    - cold
+    - cough
+    - cold & cough
+    - cold and cough
+    - coldandcough
+    - cold&cough
+    - c
+    - C
+
+- intent: cold_symptom
+  examples: |
+    - My nose is choked
+    - My chest is aching
+    - My nose is itching
+    - My throat is itching
+
+- intent: fever_symptom
+  examples: |
+    - fever
+    - FE
+    - fe
+
+- intent: others
+  examples:  |
+    - others 
+    - o
+    - O
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

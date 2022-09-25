@@ -1,0 +1,145 @@
+version: "3.1"
+
+stories:
+
+- story: user greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: user bye
+  steps:
+  - action: utter_goodbye
+
+- story: head main
+  steps:
+  - intent: head_symptom
+  - action: utter_day
+  - intent: day
+  - action: utter_head_stomach_symptom
+
+- story: head stomach ache
+  steps:
+  - action: utter_head_stomach_symptom
+  - intent: confirm
+  - action: utter_head_stomach_response
+  - action: utter_did_that_help 
+
+- story: headache area
+  steps:
+  - action: utter_head_stomach_symptom
+  - intent: deny
+  - action: utter_head_symptom
+
+- story: headache whole
+  steps:
+  - intent: head_whole
+  - action: utter_head_whole_response
+  - action: utter_did_that_help 
+
+- story: headache side
+  steps:
+  - intent: head_sides
+  - action: utter_head_sides_response
+  - action: utter_did_that_help
+
+- story: headache crown
+  steps:
+  - intent: head_crown
+  - action: utter_head_crown_response
+  - action: utter_did_that_help
+
+- story: headache eyes
+  steps:
+  - intent: head_eyes
+  - action: utter_head_eyes_response
+  - action: utter_did_that_help
+
+- story: flu
+  steps:
+  - intent: flu_symptom
+  - action: utter_day
+  - intent: day
+  - action: utter_flu_response
+  - action: utter_did_that_help
+
+- story: dry vision
+  steps:
+  - intent: vision_symptom
+  - action: utter_day
+  - intent: day
+  - action: utter_vision_types
+  - intent: confirm
+  - action: utter_dry_eyes_response
+  - action: utter_did_that_help
+
+- story: allergy vision
+  steps:
+  - intent: vision_symptom
+  - action: utter_day
+  - intent: day
+  - action: utter_vision_types
+  - intent: deny
+  - action: utter_allergy_eyes_response
+  - action: utter_did_that_help
+
+- story: gas stomach
+  steps:
+  - intent: stomach_symptom
+  - action: utter_day
+  - intent: day
+  - action: utter_stomach_types
+  - intent: confirm
+  - action: utter_gas_response
+  - action: utter_did_that_help
+
+- story: poison stomach
+  steps:
+  - intent: stomach_symptom
+  - action: utter_day
+  - intent: day
+  - action: utter_stomach_types
+  - intent: deny
+  - action: utter_poison_response
+  - action: utter_did_that_help
+
+- story: cold
+  steps:
+  - intent: cold_confirm
+  - action: utter_cold_med
+  - action: utter_did_that_help 
+
+- story: cold_sym_path
+  steps:
+  - intent: others
+  - action: utter_others
+  - intent: cold_symptom
+  - action: utter_cold_sym
+  - intent: confirm
+  - action: utter_cold_med
+  - action: utter_did_that_help 
+
+- story: cold_sym_path1
+  steps:
+  - intent: others
+  - action: utter_others
+  - intent: cold_symptom
+  - action: utter_cold_sym
+  - intent: deny
+  - action: utter_did_that_help 
+
+- story: fracture_sym_path
+  steps:
+  - intent: fracture_symptom
+  - action: utter_fracture_sym
+  - intent: fracture_accepted
+  - action: utter_fracture_details
+  - intent: fracture_details
+  - action: utter_fracture_confirm
+  - action: utter_did_that_help 
+
+- story: fever_sym_path
+  steps:
+  - intent: fever_symptom
+  - action: utter_fever_med
+  - action: utter_did_that_help 
